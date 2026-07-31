@@ -11,7 +11,7 @@ in _Software Counters mode_ `rr`. If your program is not compiled with
 this plugin _Software Counters mode_ `rr` falls back to using dynamic
 instrumentation.
 
-**The plugin can be compiled with `clang` 18, 19, 20 currently**.
+**The plugin can be compiled with `clang` 18, 19, 20, 21, 22 currently**.
 
 The plugin depends on `LLVM` internals. If you compile the plugin
 with `clang` 18 then use the plugin with `clang` 18 only. If you compile

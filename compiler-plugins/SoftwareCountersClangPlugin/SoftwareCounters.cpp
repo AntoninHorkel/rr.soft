@@ -20,7 +20,12 @@
 #include <llvm/IR/InlineAsm.h>
 #include <llvm/IR/PassManager.h>
 #include <llvm/Passes/PassBuilder.h>
+// https://github.com/llvm/llvm-project/pull/173279
+#if __has_include(<llvm/Plugins/PassPlugin.h>)
+#include <llvm/Plugins/PassPlugin.h>
+#else
 #include <llvm/Passes/PassPlugin.h>
+#endif
 #include <llvm/Support/raw_ostream.h>
 #include <llvm/Transforms/Utils/BasicBlockUtils.h>
 #include <llvm/IR/IRBuilder.h>
